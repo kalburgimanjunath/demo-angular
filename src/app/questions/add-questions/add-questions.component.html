@@ -1,0 +1,11 @@
+
+<form [formGroup]="questionForm" (ngSubmit)="onSubmit()">
+    <input type="text" id="id" formControlName="id" placeholder="question id"/><br/>
+    <input type="text" id="question" formControlName="question" placeholder="question"/><br/>
+    <input type="text" id="answertype" formControlName="answertype" placeholder="answertype"/><br/>
+    <input type="text" id="answers" formControlName="answers" placeholder="answers"/><br/>
+    <button class="btn btn-primary" type="submit" id="add" [disabled]="!questionForm.valid">Add</button>
+    <hr>
+  </form>
+
+

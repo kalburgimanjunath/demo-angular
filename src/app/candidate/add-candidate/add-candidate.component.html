@@ -1,0 +1,10 @@
+<h1>Add Candidate</h1>
+<form [formGroup]="candidateprofileForm" (ngSubmit)="onSubmit()">
+    <input type="text" id="id" formControlName="id" placeholder="id"/><br/>
+
+    <input type="text" id="company_id" formControlName="company_id" placeholder="company_id"/><br/>
+    <input type="text" id="name" formControlName="name" placeholder="company name"/><br/>
+    <input type="text" id="skills" formControlName="skills" placeholder="skills"/><br/>
+    <button class="btn btn-primary" type="submit" id="add" [disabled]="!candidateprofileForm.valid">Add</button>
+    <hr>
+  </form>

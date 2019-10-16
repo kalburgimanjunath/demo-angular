@@ -61,7 +61,15 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "es": {
+              "aot": true,
+              "i18nFile": "src/translate/messages.es.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es",
+              "i18nMissingTranslation": "error"
             }
+
           }
         },
         "serve": {
@@ -72,6 +80,9 @@
           "configurations": {
             "production": {
               "browserTarget": "interviewApp:build:production"
+            },
+            "es": {
+              "browserTarget": "interviewApp:build:es"
             }
           }
         },

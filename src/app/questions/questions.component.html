@@ -1,0 +1,16 @@
+<p>questions works!</p>
+<div *ngIf="isAddQuestions === false">
+  <button (click)="addQuestions()">Add Question</button>
+</div>
+<div *ngIf="isAddQuestions === true">
+  <app-add-questions></app-add-questions>
+</div>
+<div>
+  <ol>
+    <li *ngFor="let qst of questions">
+      {{qst.question}}
+      <br/>
+      <input type="radio"/>{{qst.answers}}
+    </li>
+  </ol>
+</div>

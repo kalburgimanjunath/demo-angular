@@ -1,0 +1,19 @@
+<p>candidate works!</p>
+
+<div>
+  <div *ngIf="isAddCandidate === false">
+    <button  (click)="this.addCandidate()">Add Candidate</button>
+  </div>
+  <div *ngIf="isAddCandidate === true">
+    <app-add-candidate>
+
+    </app-add-candidate>
+  </div>
+  <ul class="allcandidates">
+    <li *ngFor="let candidate of allcandidates">
+      <a>
+      {{candidate.name}}
+      </a>
+    </li>
+  </ul>
+</div>

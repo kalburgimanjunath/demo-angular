@@ -1,0 +1,18 @@
+<h1>Company Names</h1>
+<div>
+<a (click)="this.addCompany()" *ngIf="isAddCompany===false">Add Company</a>
+</div>
+<div *ngIf="isAddCompany">
+  <app-add-company></app-add-company>
+</div>
+<ul class="company">
+  <li *ngFor="let company of companylist">
+    <h2>{{company.name | uppercase}}</h2>
+    <div><span>id: </span>{{company.id}}</div>
+    <div><span>name: </span>{{company.name}}</div>
+    <div><span>job description: </span>{{company.jobdescription}}</div>
+    <div><span>skills looking for: </span>{{company.skills}}</div>
+  </li>
+</ul>
+
+

@@ -1,0 +1,10 @@
+
+<form [formGroup]="companyprofileForm" (ngSubmit)="onSubmit()">
+  <input type="text" id="id" formControlName="id" placeholder="company id"/><br/>
+  <input type="text" id="name" formControlName="name" placeholder="company name"/><br/>
+  <input type="text" id="jobdescription" formControlName="jobdescription" placeholder="company job description"/><br/>
+  <input type="text" id="skills" formControlName="skills" placeholder="skills looking for"/><br/>
+  <input type="text" id="createddate" formControlName="createddate" placeholder="date"/><br/>
+  <button class="btn btn-primary" type="submit" id="add" [disabled]="!companyprofileForm.valid">Add</button>
+  <hr>
+</form>
